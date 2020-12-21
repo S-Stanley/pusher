@@ -16,7 +16,6 @@ if '.git' not in files:
 if 'origin' not in os.popen('git remote').read().split('\n'):
 	origin = input('Add git origin url: ')
 	os.popen(f'git remote add origin {origin}').read()
-os.popen('git pull origin master').read()
-os.popen(f'git add . && git commit -m {message}').read()
+os.popen(f'git add . && git commit -m {message} && git pull origin master').read()
 os.popen('git push origin master').read()
 print('Done !')
