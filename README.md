@@ -18,7 +18,7 @@ Go to you directory and then run:
 ```shell
 push "MY MESSAGE"
 ```
-And if you tired of writing message:
+And if you tired of writing message, just:
 ```shell
 push
 ```
