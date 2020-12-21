@@ -9,12 +9,17 @@ if len(sys.argv) > 2:
 	sys.exit()
 
 message = sys.argv[1]
+all_branch = os.popen('git branch').read().split('\n')
+for br in all_branch:
+	if '*' in all_branch:
+		branch = br
+		break
 files = os.popen('ls -a').read().split('\n')
 if '.git' not in files:
 	os.popen('git init').read()
 if 'origin' not in os.popen('git remote').read().split('\n'):
 	origin = input('Add git origin url: ')
 	os.popen(f'git remote add origin {origin}').read()
-os.popen(f'git add . && git commit -m {message} && git pull origin master').read()
-os.popen('git push origin master').read()
+os.popen(f'git add . && git commit -m {message} && git pull origin {branch}').read()
+os.popen(f'git push origin {branch}').read()
 print('Done !')
