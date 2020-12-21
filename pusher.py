@@ -1,5 +1,5 @@
-import sys
 from modules import Commit
+import sys
 
 if len(sys.argv) == 1:
 	message = "PUSH made by pusher https://github.com/S-Stanley/pusher.git"
