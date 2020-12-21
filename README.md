@@ -1,4 +1,4 @@
-# pusher
+# Pusher
 commit and push with one command
 
 ### What does it do ?
@@ -9,7 +9,7 @@ commit and push with one command
 
 Install:
 ```shell
-cd ~; git clone https://github.com/S-Stanley/pusher.git .pusher && alias push="python3 ~/.pusher/pusher.py"
+cd ~ && git clone https://github.com/S-Stanley/pusher.git .pusher && alias push="python3 ~/.pusher/pusher.py"
 ```
 
 Run:
