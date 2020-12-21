@@ -1,6 +1,5 @@
 import os
 import sys
-from time import sleep
 
 if len(sys.argv) == 1:
 	print('Erreur! Vous devez indiquer un message')
