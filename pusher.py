@@ -2,13 +2,14 @@ import os
 import sys
 
 if len(sys.argv) == 1:
-	print('Erreur! Vous devez indiquer un message')
+	message = "PUSH made by pusher https://github.com/S-Stanley/pusher.git"
 	sys.exit()
+if len(sys.argv) == 2:
+	message = sys.argv[1]
 if len(sys.argv) > 2:
 	print('Erreur, vous avez indiquer trop d\'argument, essayez avec des apostrophes "')
 	sys.exit()
 
-message = sys.argv[1]
 all_branch = os.popen('git branch').read().split('\n')
 for br in all_branch:
 	if '*' in br:
