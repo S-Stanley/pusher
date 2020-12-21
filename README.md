@@ -8,12 +8,12 @@ commit and push with one command
 4. Always pull before a push and always commit before a pull
 5. Push on the same branch you already are
    
-Install:
+Install
 ```shell
 cd ~ && git clone https://github.com/S-Stanley/pusher.git .pusher && alias push="python3 ~/.pusher/pusher.py"
 ```
 
-Run:
+Run  
 Go to you directory and then run:
 ```shell
 push "MY MESSAGE"
