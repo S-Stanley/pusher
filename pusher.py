@@ -3,7 +3,6 @@ import sys
 
 if len(sys.argv) == 1:
 	message = "PUSH made by pusher https://github.com/S-Stanley/pusher.git"
-	sys.exit()
 if len(sys.argv) == 2:
 	message = sys.argv[1]
 if len(sys.argv) > 2:
@@ -23,4 +22,4 @@ if 'origin' not in os.popen('git remote').read().split('\n'):
 	os.popen(f'git remote add origin {origin}').read()
 os.popen(f'git add . && git commit -m "{message}" && git pull origin {branch}').read()
 os.popen(f'git push origin {branch}').read()
-print('Done!')
+print('Done !')
