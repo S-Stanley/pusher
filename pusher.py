@@ -21,6 +21,6 @@ else:
 os.popen('git add .')
 os.popen(f'git commit -m "{message}"')
 os.popen('git pull origin master --allow-unrelated-histories')
-os.popen('git push origin master')
+os.popen('git push -f origin master')
 print('Done !')
 sys.exit()
