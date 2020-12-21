@@ -18,5 +18,4 @@ if 'origin' not in os.popen('git remote').read().split('\n'):
 	os.popen(f'git remote add origin {origin}')
 os.popen('git add .')
 os.popen(f'git commit -m "{message}"')
-os.popen('git pull origin master --allow-unrelated-histories')
 os.popen('git push -f origin master')

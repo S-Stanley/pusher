@@ -3,7 +3,7 @@ commit and push with one command
 
 Install:
 ```shell
-alias push="python3 ~/pusher.py"
+cd ~; git clone https://github.com/S-Stanley/pusher.git .pusher && alias push="python3 ~/.pusher/pusher.py"
 ```
 
 Run:
