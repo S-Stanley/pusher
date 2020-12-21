@@ -1,5 +1,6 @@
 import os
 import sys
+from time import sleep
 
 if len(sys.argv) == 1:
 	print('Erreur! Vous devez indiquer un message')
@@ -17,7 +18,7 @@ if 'origin' not in os.popen('git remote').read().split('\n'):
 	os.popen(f'git remote add origin {origin}')
 else:
 	origin = os.popen('git remote get-url origin').read().replace('\n', '')
-os.popen('git pull origin master')
+os.popen('git pull origin master --allow-unrelated-histories')
 os.popen('git add .')
 os.popen(f'git commit -m "{message}"')
 os.popen('git push origin master')
