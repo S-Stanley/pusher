@@ -1,5 +1,5 @@
 # Pusher
-commit and push with one command
+commit and push with one word
 
 ### What does it do ?
 1. One command to commit and push
