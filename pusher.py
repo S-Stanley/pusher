@@ -12,10 +12,10 @@ if len(sys.argv) > 2:
 message = sys.argv[1]
 files = os.popen('ls -a').read().split('\n')
 if '.git' not in files:
-	os.popen('git init')
+	os.popen('git init').read()
 if 'origin' not in os.popen('git remote').read().split('\n'):
 	origin = input('Add git origin url: ')
-	os.popen(f'git remote add origin {origin}')
+	os.popen(f'git remote add origin {origin}').read()
 res = os.popen(f'git add . && git commit -m {message} && git push origin master')
 print(res.read())
 print('Done !')
