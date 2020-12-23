@@ -10,7 +10,7 @@ commit and push with one word
    
 ### Install
 ```shell
-cd ~ && git clone https://github.com/S-Stanley/pusher.git .pusher && alias push="python3 ~/.pusher/pusher.py"
+cd ~ && git clone https://github.com/S-Stanley/pusher.git .pusher && echo 'alias push="python3 ~/.pusher/pusher.py"' >> ~/.zshrc
 ```
 
 ### Run  
